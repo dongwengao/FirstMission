@@ -1,0 +1,40 @@
+{
+    "job": {
+        "content": [
+            {
+                "reader": {
+                    "name": "oraclereader",
+                    "parameter": {
+                        "connection": [
+                            {
+                                "jdbcUrl":  ["jdbc:oracle:thin:@(DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=TCP)(HOST=localhost)(PORT=1521)))(CONNECT_DATA=(SERVICE_NAME=xe)))"],
+                             
+                            }
+                        ],
+                        "password": "JSDFDEBUG",
+                        "username": "JSDFDEBUG"
+                    }
+                },
+                "writer": {
+                    "name": "oraclewriter",
+                    "parameter": {
+                        
+                        "connection": [
+                            {
+                                "jdbcUrl": "jdbc:oracle:thin:@[58.215.28.118]:49161:XE",
+                                
+                            }
+                        ], 
+                        "password": "JSDFDEBUG",
+                        "username": "JSDFDEBUG"
+                    }
+                }
+            }
+        ],
+        "setting": {
+            "speed": {
+                "channel": "5"
+            }
+        }
+    }
+}
